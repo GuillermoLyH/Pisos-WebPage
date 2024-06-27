@@ -31,6 +31,7 @@
             background-repeat: repeat;
             background-size: auto;
             margin: 0;
+            padding: 0;
         }
 
         .navbar-brand img {
@@ -69,6 +70,18 @@
             object-fit: cover;
         }
 
+        .authors {
+            background-color: #3b4050;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 20px;
+        }
+        .authors-img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+        }
 
         @media (max-width: 750px) {
             .palacionherocontainer img {
@@ -79,6 +92,14 @@
 
             .heroimgcontainer img {
                 max-width: 87%;
+            }
+            .authors {
+                padding: 10px;
+            }
+            .authors-img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
             }
         }
     </style>
@@ -187,9 +208,9 @@
         </div>
     </section>
     <!-- End Categories of The Month -->
-     <section style="background-color: #3b4050; display: flex; justify-content: center;">
-        <img src="images/Integrantes.png" alt="Autoras" height="300px" width="800px">
-     </section>
+    <section class="authors">
+        <img src="images/Integrantes.png" alt="Autoras" class="authors-img">
+    </section>
 
 
     <!-- Start Footer -->
